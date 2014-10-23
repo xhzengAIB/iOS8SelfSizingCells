@@ -21,6 +21,9 @@ This is instagram app feed tableView demo use iOS8 Self Sizing Cells.
 
 ```
 
+详细的做法可以参考一下Demo。
+
+
 去掉计算高度的TableViewDelegate方法。
 
 永远不用实现- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath方法和- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath方法。
