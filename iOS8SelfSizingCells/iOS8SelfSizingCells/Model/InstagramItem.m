@@ -86,6 +86,11 @@
     [dataSource addObject:item];
     
     item = [[InstagramItem alloc] init];
+    item.likeCount = @"3525";
+    item.attrbutedComment = [@"<userName>@nigelgrange</userName>  WPAttributedMarkup is a simple utility category that can be used to easily create an attributed string from text with markup tags and a style dictionary. (<userName>https://github.com/nigelgrange/WPAttributedMarkup</userName>)" attributedStringWithStyleBook:nameStyle];
+    [dataSource addObject:item];
+    
+    item = [[InstagramItem alloc] init];
     item.likeCount = @"31525";
     item.attrbutedComment = [@"<userName>@fastred</userName>  MotionBlur allows you to add motion blur effect to iOS animations. (<userName>https://github.com/fastred/MotionBlur</userName>), very cool!" attributedStringWithStyleBook:nameStyle];
     [dataSource addObject:item];
