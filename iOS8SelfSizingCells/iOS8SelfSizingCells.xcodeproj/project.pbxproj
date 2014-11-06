@@ -16,6 +16,11 @@
 		7D5D6F9119F7BD770024311A /* InstagramFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D6F9019F7BD770024311A /* InstagramFeedTableViewController.m */; };
 		7D5D6F9419F7BD900024311A /* InstagramItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D6F9319F7BD900024311A /* InstagramItem.m */; };
 		7D5D6F9A19F7BDEE0024311A /* InstagramFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D6F9919F7BDEE0024311A /* InstagramFeedTableViewCell.m */; };
+		7DDF5A4B1A0B3A9C005FD70C /* NSMutableString+TagReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF5A421A0B3A9C005FD70C /* NSMutableString+TagReplace.m */; };
+		7DDF5A4C1A0B3A9C005FD70C /* NSString+WPAttributedMarkup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF5A441A0B3A9C005FD70C /* NSString+WPAttributedMarkup.m */; };
+		7DDF5A4D1A0B3A9C005FD70C /* WPAttributedStyleAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF5A461A0B3A9C005FD70C /* WPAttributedStyleAction.m */; };
+		7DDF5A4E1A0B3A9C005FD70C /* WPHotspotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF5A481A0B3A9C005FD70C /* WPHotspotLabel.m */; };
+		7DDF5A4F1A0B3A9C005FD70C /* WPTappableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF5A4A1A0B3A9C005FD70C /* WPTappableLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,16 @@
 		7D5D6F9319F7BD900024311A /* InstagramItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramItem.m; sourceTree = "<group>"; };
 		7D5D6F9819F7BDEE0024311A /* InstagramFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramFeedTableViewCell.h; sourceTree = "<group>"; };
 		7D5D6F9919F7BDEE0024311A /* InstagramFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramFeedTableViewCell.m; sourceTree = "<group>"; };
+		7DDF5A411A0B3A9C005FD70C /* NSMutableString+TagReplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+TagReplace.h"; sourceTree = "<group>"; };
+		7DDF5A421A0B3A9C005FD70C /* NSMutableString+TagReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+TagReplace.m"; sourceTree = "<group>"; };
+		7DDF5A431A0B3A9C005FD70C /* NSString+WPAttributedMarkup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WPAttributedMarkup.h"; sourceTree = "<group>"; };
+		7DDF5A441A0B3A9C005FD70C /* NSString+WPAttributedMarkup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WPAttributedMarkup.m"; sourceTree = "<group>"; };
+		7DDF5A451A0B3A9C005FD70C /* WPAttributedStyleAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAttributedStyleAction.h; sourceTree = "<group>"; };
+		7DDF5A461A0B3A9C005FD70C /* WPAttributedStyleAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAttributedStyleAction.m; sourceTree = "<group>"; };
+		7DDF5A471A0B3A9C005FD70C /* WPHotspotLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHotspotLabel.h; sourceTree = "<group>"; };
+		7DDF5A481A0B3A9C005FD70C /* WPHotspotLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHotspotLabel.m; sourceTree = "<group>"; };
+		7DDF5A491A0B3A9C005FD70C /* WPTappableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTappableLabel.h; sourceTree = "<group>"; };
+		7DDF5A4A1A0B3A9C005FD70C /* WPTappableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTappableLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +104,7 @@
 			children = (
 				7D5D6F6719F7B7030024311A /* AppDelegate.h */,
 				7D5D6F6819F7B7030024311A /* AppDelegate.m */,
+				7DDF5A3F1A0B3A9C005FD70C /* Vender */,
 				7D5D6F8D19F7BD6A0024311A /* Model */,
 				7D5D6F8E19F7BD6A0024311A /* View */,
 				7D5D6F8C19F7BD6A0024311A /* Controller */,
@@ -151,6 +167,31 @@
 				7D5D6F9919F7BDEE0024311A /* InstagramFeedTableViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7DDF5A3F1A0B3A9C005FD70C /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				7DDF5A401A0B3A9C005FD70C /* WPAttributedMarkup */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		7DDF5A401A0B3A9C005FD70C /* WPAttributedMarkup */ = {
+			isa = PBXGroup;
+			children = (
+				7DDF5A411A0B3A9C005FD70C /* NSMutableString+TagReplace.h */,
+				7DDF5A421A0B3A9C005FD70C /* NSMutableString+TagReplace.m */,
+				7DDF5A431A0B3A9C005FD70C /* NSString+WPAttributedMarkup.h */,
+				7DDF5A441A0B3A9C005FD70C /* NSString+WPAttributedMarkup.m */,
+				7DDF5A451A0B3A9C005FD70C /* WPAttributedStyleAction.h */,
+				7DDF5A461A0B3A9C005FD70C /* WPAttributedStyleAction.m */,
+				7DDF5A471A0B3A9C005FD70C /* WPHotspotLabel.h */,
+				7DDF5A481A0B3A9C005FD70C /* WPHotspotLabel.m */,
+				7DDF5A491A0B3A9C005FD70C /* WPTappableLabel.h */,
+				7DDF5A4A1A0B3A9C005FD70C /* WPTappableLabel.m */,
+			);
+			path = WPAttributedMarkup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +296,11 @@
 			files = (
 				7D5D6F6919F7B7030024311A /* AppDelegate.m in Sources */,
 				7D5D6F9119F7BD770024311A /* InstagramFeedTableViewController.m in Sources */,
+				7DDF5A4E1A0B3A9C005FD70C /* WPHotspotLabel.m in Sources */,
+				7DDF5A4D1A0B3A9C005FD70C /* WPAttributedStyleAction.m in Sources */,
+				7DDF5A4B1A0B3A9C005FD70C /* NSMutableString+TagReplace.m in Sources */,
+				7DDF5A4C1A0B3A9C005FD70C /* NSString+WPAttributedMarkup.m in Sources */,
+				7DDF5A4F1A0B3A9C005FD70C /* WPTappableLabel.m in Sources */,
 				7D5D6F6619F7B7030024311A /* main.m in Sources */,
 				7D5D6F9A19F7BDEE0024311A /* InstagramFeedTableViewCell.m in Sources */,
 				7D5D6F9419F7BD900024311A /* InstagramItem.m in Sources */,
@@ -450,6 +496,7 @@
 				7D5D6F8519F7B7030024311A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D5D6F8619F7B7030024311A /* Build configuration list for PBXNativeTarget "iOS8SelfSizingCellsTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +505,7 @@
 				7D5D6F8819F7B7030024311A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

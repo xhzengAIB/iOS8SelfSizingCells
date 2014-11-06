@@ -10,6 +10,8 @@
 
 #import "InstagramItem.h"
 
+#import "WPHotspotLabel.h"
+
 @implementation InstagramFeedTableViewCell
 
 - (NSMutableAttributedString *)filterLinkWithContent:(NSString *)content {
@@ -37,7 +39,11 @@
     
     self.likeLabel.text = [NSString stringWithFormat:@"%@ 次赞", instagramItem.likeCount];
     
-    self.commentLabel.attributedText = [self filterLinkWithContent:instagramItem.comment];
+    if (instagramItem.attrbutedComment) {
+        self.commentLabel.attributedText = instagramItem.attrbutedComment;
+    } else {
+        self.commentLabel.attributedText = [self filterLinkWithContent:instagramItem.comment];
+    }
 }
 
 - (void)awakeFromNib {

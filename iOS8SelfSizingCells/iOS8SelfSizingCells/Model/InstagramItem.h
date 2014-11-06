@@ -13,6 +13,7 @@
 
 @property (nonatomic, copy) NSString *likeCount;
 @property (nonatomic, copy) NSString *comment;
+@property (nonatomic, copy) NSAttributedString *attrbutedComment;
 @property (nonatomic, strong) UIImage *photo;
 
 + (NSArray *)newDataSource;
