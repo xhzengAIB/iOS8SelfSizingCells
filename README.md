@@ -37,6 +37,8 @@ This is instagram app feed tableView demo use iOS8 Self Sizing Cells.
 只要克服自己的不喜欢，爱上AutoLayout，加上size class。你会发现世界不一样了，但是autolayout很需要空间想象力，千万不要约束错了哦！不然self sizing cells不起作用的。
 
 
+#使用的富文本Label来自[Nigel Grange](https://github.com/nigelgrange)的[WPAttributedMarkup](https://github.com/nigelgrange/WPAttributedMarkup)开源库，很感谢他的帮助。
+
 ![image](https://github.com/xhzengAIB/LearnEnglish/raw/master/Screenshots/InstagramFeedTableView2.png)
 ![image](https://github.com/xhzengAIB/LearnEnglish/raw/master/Screenshots/InstagramFeedTableView1.png)
 
