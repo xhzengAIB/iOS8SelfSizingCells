@@ -17,16 +17,20 @@
     
     NSMutableArray *dataSource = [[NSMutableArray alloc] init];
     
+    NSDictionary *nameStyle = @{@"body":[UIFont fontWithName:@"HelveticaNeue" size:16],
+                                @"userName":[WPAttributedStyleAction styledActionWithAction:^{
+                                    [[[UIAlertView alloc] initWithTitle:@"提示" message:@"点击了" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil] show];
+                                }],
+                                @"link": [UIColor blueColor]};
+    
     InstagramItem *item = [[InstagramItem alloc] init];
     item.likeCount = @"1990";
-    
-    NSDictionary *nameStyle = @{@"body":[UIFont fontWithName:@"HelveticaNeue" size:16],
-                             @"userName":[WPAttributedStyleAction styledActionWithAction:^{
-                                 [[[UIAlertView alloc] initWithTitle:@"提示" message:@"点击了" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil] show];
-                             }],
-                             @"link": [UIColor blueColor]};
-    
     item.attrbutedComment = [@"<userName>@Christian Roman</userName>  Custom UIView subclass with a pixellated animation inspired by Facebook's Slingshot app. (<userName>https://github.com/chroman/CRPixellatedView</userName>)" attributedStringWithStyleBook:nameStyle];
+    [dataSource addObject:item];
+    
+    item = [[InstagramItem alloc] init];
+    item.likeCount = @"1990";
+    item.attrbutedComment = [@"<userName>@SpringOx</userName>  A ImageView Class for loading image concurrently in iOS. (<userName>https://github.com/SpringOx/ALImageView</userName>)" attributedStringWithStyleBook:nameStyle];
     [dataSource addObject:item];
     
     item = [[InstagramItem alloc] init];
