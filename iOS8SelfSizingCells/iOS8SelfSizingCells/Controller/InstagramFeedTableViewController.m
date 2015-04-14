@@ -57,4 +57,19 @@
     return cell;
 }
 
+#pragma mark - UITableView Delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (!self.navigationController) {
+        
+    }
+    UIViewController *viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"InstagramFeedTableViewController"];
+    
+    [self.navigationController presentViewController:viewController animated:YES completion:NULL];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3. * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [viewController dismissViewControllerAnimated:YES completion:NULL];
+    });
+}
+
 @end
