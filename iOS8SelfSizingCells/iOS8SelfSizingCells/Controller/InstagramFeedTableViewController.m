@@ -10,6 +10,8 @@
 #import "InstagramItem.h"
 #import "InstagramFeedTableViewCell.h"
 
+#import "UITableViewController+KYSelfSizingPushFix.h"
+
 @interface InstagramFeedTableViewController ()
 
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -26,7 +28,8 @@
     
     
     self.dataSource = [[InstagramItem newDataSource] mutableCopy];
-    [self.tableView reloadData];
+//    [self.tableView reloadData];
+    [self ky_tableViewReloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,6 +57,12 @@
     cell.instagramItem = self.dataSource[indexPath.row];
     
     
+    if (![self ky_isEstimatedRowHeightInCache:indexPath]) {
+        CGSize cellSize = [cell systemLayoutSizeFittingSize:CGSizeMake(self.view.frame.size.width, 0) withHorizontalFittingPriority:1000.0 verticalFittingPriority:50.0];
+        [self ky_putEstimatedCellHeightToCache:indexPath height:cellSize.height];
+    }
+    
+    
     return cell;
 }
 
@@ -71,5 +80,11 @@
         [viewController dismissViewControllerAnimated:YES completion:NULL];
     });
 }
+
+//给estimatedHeight返回缓存的之前正确的高度。return the height cache to the estimatedHeight
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [self ky_getEstimatedCellHeightFromCache:indexPath defaultHeight:44.0];
+}
+
 
 @end

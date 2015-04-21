@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F3ABC851AE51A3C0014DA38 /* UITableViewController+KYSelfSizingPushFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3ABC841AE51A3C0014DA38 /* UITableViewController+KYSelfSizingPushFix.m */; };
 		7D5D6F6619F7B7030024311A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D6F6519F7B7030024311A /* main.m */; };
 		7D5D6F6919F7B7030024311A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D6F6819F7B7030024311A /* AppDelegate.m */; };
 		7D5D6F6F19F7B7030024311A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5D6F6D19F7B7030024311A /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F3ABC831AE51A3C0014DA38 /* UITableViewController+KYSelfSizingPushFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+KYSelfSizingPushFix.h"; sourceTree = "<group>"; };
+		5F3ABC841AE51A3C0014DA38 /* UITableViewController+KYSelfSizingPushFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+KYSelfSizingPushFix.m"; sourceTree = "<group>"; };
 		7D5D6F6019F7B7030024311A /* iOS8SelfSizingCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS8SelfSizingCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5D6F6419F7B7030024311A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D5D6F6519F7B7030024311A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F3ABC861AE51A400014DA38 /* KYSelfSizingPushFix */ = {
+			isa = PBXGroup;
+			children = (
+				5F3ABC831AE51A3C0014DA38 /* UITableViewController+KYSelfSizingPushFix.h */,
+				5F3ABC841AE51A3C0014DA38 /* UITableViewController+KYSelfSizingPushFix.m */,
+			);
+			name = KYSelfSizingPushFix;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		7D5D6F5719F7B7020024311A = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				7DDF5A401A0B3A9C005FD70C /* WPAttributedMarkup */,
+				5F3ABC861AE51A400014DA38 /* KYSelfSizingPushFix */,
 			);
 			path = Vender;
 			sourceTree = "<group>";
@@ -295,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D5D6F6919F7B7030024311A /* AppDelegate.m in Sources */,
+				5F3ABC851AE51A3C0014DA38 /* UITableViewController+KYSelfSizingPushFix.m in Sources */,
 				7D5D6F9119F7BD770024311A /* InstagramFeedTableViewController.m in Sources */,
 				7DDF5A4E1A0B3A9C005FD70C /* WPHotspotLabel.m in Sources */,
 				7DDF5A4D1A0B3A9C005FD70C /* WPAttributedStyleAction.m in Sources */,
@@ -427,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xinyu Li (XWYND9KE57)";
 				INFOPLIST_FILE = iOS8SelfSizingCells/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
