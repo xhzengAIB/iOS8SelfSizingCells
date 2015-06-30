@@ -40,6 +40,7 @@ This is instagram app feed tableView demo use iOS8 Self Sizing Cells.
 #感谢
 使用的富文本Label来自[Nigel Grange](https://github.com/nigelgrange)的[WPAttributedMarkup](https://github.com/nigelgrange/WPAttributedMarkup)开源库，很感谢他的帮助。                    
 
+
 #预览图
 ![image](https://github.com/xhzengAIB/LearnEnglish/raw/master/Screenshots/InstagramFeedTableView2.png)
 ![image](https://github.com/xhzengAIB/LearnEnglish/raw/master/Screenshots/InstagramFeedTableView1.png)
